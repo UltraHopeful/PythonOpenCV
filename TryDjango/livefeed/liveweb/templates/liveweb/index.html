@@ -1,0 +1,9 @@
+{% extends "liveweb/base.html" %}
+{% block index %}
+<h1 class="display-1"> Live feed from webcam</h1>
+<div class="container">
+  <div class="row m-auto">
+      <img class="imgfluid" src="{% url 'live' %}">
+  </div>
+</div>
+{% endblock index %}
